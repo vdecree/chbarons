@@ -1,0 +1,94 @@
+body {
+    font-family: var(--font-base);
+    font-size: var(--step-0);
+    color: var(--color-black);
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: var(--size-700);
+    line-height: 1.2;
+    font-family: var(--font-base);
+  }
+  
+  h1 {
+    font-size: var(--step-8);
+  }
+  
+  h2 {
+    font-size: var(--step-7);
+  }
+  
+  h3 {
+    font-size: var(--step-6);
+  }
+  
+  h4 {
+    font-size: var(--step-5);
+  }
+  
+  h5 {
+    font-size: var(--step-4);
+  }
+ 
+  h6 {
+    font-size: var(--step-3);
+  }
+ 
+  .pre-head{
+     text-transform: uppercase;
+     letter-spacing: 0.25rem;
+     color: var(--color-primary);
+     font-size: var(--step-0);
+     font-family: var(--font-base);
+  }
+ 
+  p{
+     margin-bottom: 2rem;
+  }
+ 
+  a{
+     color: currentColor;
+  }
+ 
+  .italics{
+     font-style: italic;
+  }
+ 
+  .no-marg{
+     margin: 0;
+  }
+ 
+  .text-upper{
+     text-transform: uppercase;
+  }
+ 
+ @font-face {
+    font-family: "Flaticon";
+    src: url("/assets/fonts/Flaticon.eot");
+    src: url("/assets/fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+          url("/assets/fonts/Flaticon.woff2") format("woff2"),
+          url("/assets/fonts/Flaticon.woff") format("woff"),
+          url("/assets/fonts/Flaticon.ttf") format("truetype"),
+          url("/assets/fonts/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+ }
+  
+ @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+       font-family: "Flaticon";
+       src: url("/assets/fonts/Flaticon.svg#Flaticon") format("svg");
+    }
+ }
+  
+ [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+ [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 20px;
+ }
+  
+ .flaticon-foreign:before { content: "\f100"; }

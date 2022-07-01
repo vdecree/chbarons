@@ -1,0 +1,70 @@
+.header__contactdeet{
+    width: 100%;    
+    color: var(--color-light);
+    line-height: 1;
+}
+
+.header__contactdeet .row{
+    width: 100%;
+}
+
+.header__contactdeet ul{
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.header__contactdeet ul li{
+    list-style: none;
+}
+
+.header__contactdeet ul li:nth-child(2){
+    padding: 0 var(--text-700);
+}
+
+.header .bs1{
+    fill:var(--color-primary);
+}
+
+.header #bslogosymbol{
+    width: 5.3rem;
+    height: 5.3rem;
+}
+
+.header__inner .nav-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner .nav-layout ul{
+    margin: 0;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.header__inner .nav-layout a{
+    text-decoration: none;
+}
+
+.header__inner .nav{
+    letter-spacing: .2rem;
+}
+
+.header__inner .nav li{
+    margin: 0 var(--text-200);
+    padding: 0 var(--text-200);
+}
+
+.header__inner .social ul li{
+    margin: 0 0 0 var(--text-300);
+}
+
+.header__inner .social ul li a svg{
+    fill: var(--color-primary);
+}
