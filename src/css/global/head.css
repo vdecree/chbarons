@@ -68,3 +68,7 @@
 .header__inner .social ul li a svg{
     fill: var(--color-primary);
 }
+
+.header__inner .social ul li a:hover svg{
+    fill: var(--color-secondary);
+}

@@ -92,5 +92,15 @@
 </header>
 
 <main class="main">
-  
+  <section class="hero">
+    <div class="wrapper">
+      <h1 class="[ text-1000 lg:text-1300 pad-bottom-200 ]">Carpentry <span class="[ font-alt ]">&amp;</span> Joinery</h1>
+      <div class="hero__intro [ measure-short ]">
+        <p>C H Barons are a team of experienced carpenters and joiners based in the South Hams, Devon. We cover all types of building work, domestic and commercial and pride ourselves in our customer service and project management.</p>
+      </div>
+      <div class="hero__image [ gap-top-1200 ]">
+        <img src="assets/images/banner-image.jpg" alt="">
+      </div>
+    </div>
+  </section>
 </main>

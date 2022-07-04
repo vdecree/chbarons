@@ -7,17 +7,21 @@ body {
   
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: var(--size-700);
+    margin-bottom: var(--size-800);
     line-height: 1.2;
     font-family: var(--font-base);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    color: var(--color-primary);
   }
   
   h1 {
-    font-size: var(--step-8);
+    font-size: var(--step-9);
   }
   
   h2 {
-    font-size: var(--step-7);
+    font-size: var(--step-4);
   }
   
   h3 {

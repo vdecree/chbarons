@@ -11,6 +11,7 @@ const theme = {
   },
   fonts: {
     base: 'Mukta, sans-serif, arial',
+    alt: 'Petit Formal Script, cursive',
   },
   sizeScale: {
     200: 'var(--step--2)',
@@ -21,6 +22,11 @@ const theme = {
     700: 'var(--step-3)',
     800: 'var(--step-4)',
     900: 'var(--step-5)',
+    1000: 'var(--step-6)',
+    1100: 'var(--step-7)',
+    1200: 'var(--step-8)',
+    1300: 'var(--step-9)',
+    1400: 'var(--step-10)',
   },
   textScale: {
     200: 'var(--step--2)',
@@ -31,6 +37,11 @@ const theme = {
     700: 'var(--step-3)',
     800: 'var(--step-4)',
     900: 'var(--step-5)',
+    1000: 'var(--step-6)',
+    1100: 'var(--step-7)',
+    1200: 'var(--step-8)',
+    1300: 'var(--step-9)',
+    1400: 'var(--step-10)',
   },
 };
 
