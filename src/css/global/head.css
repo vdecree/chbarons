@@ -1,3 +1,12 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 .header__contactdeet{
     width: 100%;    
     color: var(--color-light);
@@ -10,7 +19,7 @@
 
 .header__contactdeet ul{
     text-transform: uppercase;
-    letter-spacing: .2rem;
+    letter-spacing: .3rem;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -53,7 +62,9 @@
 }
 
 .header__inner .nav{
-    letter-spacing: .2rem;
+    letter-spacing: .3rem;
+    /* font-size: var(--step--1); */
+    font-weight: 300;
 }
 
 .header__inner .nav li{
@@ -72,3 +83,88 @@
 .header__inner .social ul li a:hover svg{
     fill: var(--color-secondary);
 }
+
+
+@media screen and (max-width:900px) {
+    .header .nav {
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin-right:auto;
+        overflow-y:auto;
+        /* transition:transform .4s ease-in-out; */
+        transform:translateY(150%);
+        /* transition:.4s ease-in-out; */
+        padding:var(--size-600) var(--size-600) var(--size-800) var(--size-600);
+        display:flex;
+        flex-direction:column;
+        align-self:stretch;
+        background: red;
+    }
+
+    .header .social{
+        display: none;
+    }
+}
+
+.header[data-state=open] .nav {
+    transform:translateY(0);
+}
+
+.burger {
+    --burger-size:2rem;
+    --burger-line-height:2px;
+    position:relative;
+    display:inline-block;
+    appearance:none;
+    border:none;
+    outline:0;
+    background:0 0;
+    padding:0;
+    margin:0;
+    cursor:pointer;
+    width:var(--burger-size);
+    height:var(--burger-size);
+    color:currentColor
+   }
+   .burger span,
+   .burger:after,
+   .burger:before {
+    position:absolute;
+    top:calc((var(--burger-size)/ 2) - (var(--burger-line-height)/ 2));
+    right:0;
+    height:var(--burger-line-height);
+    transition:all .3s cubic-bezier(.785,.135,.15,.86);
+    transition-delay:.1s;
+    border-radius:999px;
+    background:currentColor;
+    width:100%
+   }
+   .burger:after,
+   .burger:before {
+    content:''
+   }
+   .burger:before {
+    transform:translateY(-8px)
+   }
+   .burger span {
+    /* transform:translateX(12.5%) */
+   }
+   .burger:after {
+    transform:translateY(8px)
+   }
+   .burger:focus {
+    outline:2px solid var(--color-pink)
+   }
+   .burger[aria-expanded=true] span {
+    opacity:0;
+    transform:translateX(20px)
+   }
+   .burger[aria-expanded=true]:before {
+    transform:rotate(45deg)
+   }
+   .burger[aria-expanded=true]:after {
+    transform:rotate(-45deg)
+   }

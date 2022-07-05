@@ -13,6 +13,11 @@ const theme = {
     base: 'Mukta, sans-serif, arial',
     alt: 'Petit Formal Script, cursive',
   },
+  display: {
+    block: "block",
+    none: "none",
+    inline: "inline-block"
+  },
   sizeScale: {
     200: 'var(--step--2)',
     300: 'var(--step--1)',
@@ -103,6 +108,12 @@ module.exports = {
       items: theme.textScale,
       responsive: true,
       property: 'font-size',
+      variable: true,
+    },
+    display: {
+      items: theme.display,
+      responsive: true,
+      property: 'display',
       variable: true,
     },
     weight: {
