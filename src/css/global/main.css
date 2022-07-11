@@ -3,17 +3,32 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 78vh;
+    /* height: 78vh;
     max-height: 60.25rem;
+     */
+    height: auto;
     padding-top: 15.72rem;
     position: relative;
     z-index: 5;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 960px) {
+    .hero{
+        height: 78vh;
+        max-height: 60.25rem;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 960px) {
     .hero{
         height: 70vh;
         max-height: 45rem;
+    }
+}
+
+@media screen and (min-width: 680px){
+    .hero__image{
+        padding-bottom: 0;
     }
 }
 

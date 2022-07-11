@@ -1,5 +1,6 @@
 const theme = {
   breakpoints: {
+    sm: '28em',
     md: '48em',
     lg: '68em',
   },
@@ -70,10 +71,12 @@ module.exports = {
     'gap-top': {
       items: theme.sizeScale,
       property: 'margin-top',
+      responsive: true,
     },
     'gap-bottom': {
       items: theme.sizeScale,
       property: 'margin-bottom',
+      responsive: true,
     },
     leading: {
       items: {
@@ -95,10 +98,12 @@ module.exports = {
     'pad-top': {
       items: theme.sizeScale,
       property: 'padding-top',
+      responsive: true,
     },
     'pad-bottom': {
       items: theme.sizeScale,
       property: 'padding-bottom',
+      responsive: true,
     },
     size: {
       items: theme.sizeScale,
