@@ -6,6 +6,7 @@ const theme = {
   },
   colors: {
     primary: '#2C324E',
+    primaryoffest: "#9EA4C2",
     secondary: '#CE8B48',
     light: '#ffffff',
     dark: '#252525',
@@ -18,6 +19,10 @@ const theme = {
     block: "block",
     none: "none",
     inline: "inline-block"
+  },
+  transform: {
+    upper: "uppercase",
+    lower: "lowercase",
   },
   sizeScale: {
     200: 'var(--step--2)',
@@ -33,6 +38,9 @@ const theme = {
     1200: 'var(--step-8)',
     1300: 'var(--step-9)',
     1400: 'var(--step-10)',
+    1500: 'var(--step-11)',
+    1600: 'var(--step-12)',
+    1700: 'var(--step-13)',
   },
   textScale: {
     200: 'var(--step--2)',
@@ -68,15 +76,22 @@ module.exports = {
       property: 'font-family',
       variable: true,
     },
+    transform: {
+      items: theme.transform,
+      property: 'text-transform',
+      variable: true,
+    },
     'gap-top': {
       items: theme.sizeScale,
       property: 'margin-top',
       responsive: true,
+      variable: true,
     },
     'gap-bottom': {
       items: theme.sizeScale,
       property: 'margin-bottom',
       responsive: true,
+      variable: true,
     },
     leading: {
       items: {

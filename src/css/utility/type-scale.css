@@ -108,4 +108,11 @@
     ((var(--f-10-min) / 16) * 1rem) + (var(--f-10-max) - var(--f-10-min)) *
       var(--fluid-bp)
   );
+
+  --f-11-min: 58.45;
+  --f-11-max: 65.76;
+  --step-11: calc(
+    ((var(--f-11-min) / 16) * 1rem) + (var(--f-11-max) - var(--f-11-min)) *
+      var(--fluid-bp)
+  );
 }
