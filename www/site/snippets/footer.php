@@ -13,7 +13,7 @@
 
   <footer class="footer [ bg-primary color-primaryoffest pad-top-1500 pad-bottom-1500 ]">
     <div class="wrapper">
-      <div class="footer-top [ split-child ]">
+      <div class="footer-top">
         <div class="footer-top__left">
           <div class="logo-icon">
             <img src="assets/icons/logo-wo-circle.svg" alt="">
@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom [ pad-top-1400 gap-top-1400 ]">
         <p>&copy; CH Barons LTD 2022. All Rights Reserved.Website by Mat doidge</p>
       </div>
     </div>

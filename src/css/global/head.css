@@ -22,17 +22,30 @@
     letter-spacing: .3rem;
     margin: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: var(--size-200);
+}
+
+.dot{ display: none; }
+
+@media screen and (min-width:38.75em) {
+    .header__contactdeet ul{
+        flex-direction: row;
+        gap: var(--size-800);
+    }
+
+    .dot{
+        display: initial;
+    }
 }
 
 .header__contactdeet ul li{
     list-style: none;
-}
-
-.header__contactdeet ul li:nth-child(2){
-    padding: 0 var(--text-700);
 }
 
 .header .bs1{
@@ -119,6 +132,20 @@
         background-color: var(--color-primary);
         visibility: visible;
     }
+
+    .header[data-state=open] .nav ul{
+        color: var(--color-light);
+        padding-top: 50vw;
+        padding-left: 0;
+    }
+
+    .header[data-state=open] .nav ul li{
+        margin-bottom: var(--size-900);
+    }
+
+    .burger[aria-expanded="true"]{
+        color:var(--color-light) !important;
+    }
 }
 
 .header .social{
@@ -151,10 +178,6 @@
 
     .header .social{
         display: inline-flex;
-    }
-
-    .header[data-state=open] .nav {
-        background-color: transparent;
     }
 }
 

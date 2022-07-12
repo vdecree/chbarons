@@ -57,7 +57,7 @@
     <div class="row">
       <ul>
         <li><span class="[ color-secondary ]">Call:</span> 07811 376300 </li>
-        <li><span class="[ color-secondary text-900 ]">&middot;</span></li>
+        <li><span class="[ dot color-secondary text-900 ]">&middot;</span></li>
         <li>colin@chbarons.co.uk</li>
       </ul>
     </div>
