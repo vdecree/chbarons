@@ -51,14 +51,13 @@
   <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">
 </head>
 <body>
-
-<header class="header [  ]">
+<header class="header <?= $page->title()->lower() ?>">
   <div class="header__contactdeet [ bg-primary pad-top-200 pad-bottom-200 text-300 ]">
     <div class="row">
       <ul>
-        <li><span class="[ color-secondary ]">Call:</span> 07811 376300 </li>
+        <li><span class="[ color-secondary ]">Call:</span> <?= $site->telephone() ?> </li>
         <li><span class="[ dot color-secondary text-900 ]">&middot;</span></li>
-        <li>colin@chbarons.co.uk</li>
+        <li><a href="mailto:<?= $site->email() ?>"><?= $site->email() ?></a></li>
       </ul>
     </div>
   </div>
