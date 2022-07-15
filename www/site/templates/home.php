@@ -25,10 +25,15 @@
     <div class="wrapper">
       <h1 class="[ text-1000 lg:text-1300 pad-bottom-200 ]">Carpentry <span class="[ font-alt ]">&amp;</span> Joinery</h1>
       <div class="hero__intro [ measure-short ]">
-        <p>C H Barons are a team of experienced carpenters and joiners based in the South Hams, Devon. We cover all types of building work, domestic and commercial and pride ourselves in our customer service and project management.</p>
+      <?php if ($page->intro()->isNotEmpty()): ?>
+        <?= $page->intro()->kt() ?>
+      <?php endif ?>
       </div>
       <div class="hero__image [ gap-top-1200 pad-bottom-1200 ]">
-        <img src="assets/images/banner-image.jpg" alt="">
+      <?php if($image = $page->coverimage()->toFile()): ?>
+          <img src="<?= $image->url() ?>" alt="">
+      <?php endif ?>
+        <!-- <img src="assets/images/banner-image.jpg" alt=""> -->
       </div>
     </div>
   </section>
@@ -53,11 +58,13 @@
   <section class="specialist [ pad-top-300 pad-bottom-1500 ]">
     <div class="wrapper">
       <div class="split-child">
-        <h1>All types of building work undertaken</h1>
+        <?php if ($page->specialistheading()->isNotEmpty()): ?>
+          <h1><?= $page->specialistheading() ?></h1>
+        <?php endif ?>
         <div class="text">
-        <p>From roofs, kitchens, renovations and extensions, to fitting out commercial units, we also cover all types of storage, furniture and bespoke cabinetry. We regularly work on holiday home refurbishments remotely for customers who do not live in the area and always ensure minimum disruption, leaving your property clean and tidy after each visit</p>
-
-        <p>As a small business we take great pride in our work and the involvement and satisfaction of our customers and enjoy working on ongoing projects as a result of the relationships we build along the way.</p>
+        <?php if ($page->specialisttext()->isNotEmpty()): ?>
+          <?= $page->specialisttext()->kt() ?>
+        <?php endif ?>
         </div>
       </div>
     </div>

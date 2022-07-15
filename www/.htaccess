@@ -3,6 +3,7 @@
 
 # rewrite rules
 <IfModule mod_rewrite.c>
+Header set Cache-Control "no-cache, private"
 
 # enable awesome urls. i.e.:
 # http://yourdomain.com/about-us/team

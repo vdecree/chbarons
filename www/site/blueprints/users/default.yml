@@ -34,6 +34,11 @@ columns:
         type: text
         icon: twitter
         placeholder: @username
+      facebook:
+        label: Facebook
+        type: text
+        icon: facebook
+        placeholder: username
       instagram:
         label: Instagram
         type: text

@@ -9,4 +9,14 @@
  */
 return [
     'debug' => true,
+    'panel' => [
+        'slug' => 'admin-area'
+    ]
 ];
+
+
+
+
+
+    
+
