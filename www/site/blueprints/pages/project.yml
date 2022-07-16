@@ -1,0 +1,30 @@
+title: Project
+
+columns:
+  - width: 1/2
+    sections:
+      # name of section we're making
+      info:
+        type: fields
+        fields:
+          client:
+            type: text
+            label: Client / Title
+            help: Appears at the top of the page
+          link:
+            type: url
+            help: If the client has a website or something you need to link to (optional)
+          text:
+            type: textarea
+            size: small
+          year:
+            type: text
+
+  - width: 1/2
+    sections:
+      gallery:
+        type: files
+        layout: cards
+        image: 
+          ratio: 1/1
+

@@ -7,10 +7,12 @@
         <?php foreach ($page->children()->listed() as $project): ?>
         <li>
           <a href="<?= $project->url() ?>">
-          <figure>
+          
             <?= $project->image()->resize(400, 500) ?>
-            <figcaption><?= $project->title() ?></figcaption>
-          </figure>
+            <?= $project->title() ?>
+            <?= $project->text()->kt()->maxlength(2) ?>
+
+          
           </a>
         </li>
         <?php endforeach ?>
