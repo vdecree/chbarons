@@ -131,6 +131,7 @@
         transform:translateX(0);
         background-color: var(--color-primary);
         visibility: visible;
+        z-index: 1000;
     }
 
     .header[data-state=open] .nav ul{
@@ -195,7 +196,8 @@
     cursor:pointer;
     width:var(--burger-size);
     height:var(--burger-size);
-    color:currentColor
+    color:currentColor;
+    z-index: 1000;
    }
    .burger span,
    .burger:after,

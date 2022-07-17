@@ -93,6 +93,12 @@ module.exports = {
       responsive: true,
       variable: true,
     },
+    'flow-space':{
+      items: theme.sizeScale,
+      property: '--flow-space',
+      responsive: true,
+      variable: true,
+    },
     leading: {
       items: {
         'extra-tight': '1.067',
