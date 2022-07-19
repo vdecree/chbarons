@@ -1,0 +1,17 @@
+# This section blueprint defines a pages section that can be reused across multiple blueprints
+# or multiple times within the same blueprint, see `/site/blueprints/pages/photography.yml`  and `/site/blueprints/site.yml`
+# Sections can have different layouts and display additional information or a preview image
+# More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
+type: pages
+label: Projects
+parent: kirby.page("projects")
+size: small
+info: "{{ page.images.count }} image(s), Year: {{ page.year }}"
+layout: cards
+template: project
+empty: No projects yet
+image: 
+  # this would need to be page.cover.toFile if it were not for the model in /models/project.php
+  query: page.cover
+  cover: true
+  ratio: 4/5

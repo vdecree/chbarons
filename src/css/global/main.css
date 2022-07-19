@@ -98,9 +98,7 @@ ul.stacked-list{
     margin-top: var(--size-1400);
 } */
 
-.project-list__info > p:last-of-type{
-    margin-bottom: 0;
-}
+
 
 @media screen and (min-width: 41.5em) {
     ul.stacked-list{
@@ -109,11 +107,17 @@ ul.stacked-list{
 
     .project-list__info{
         min-width: 26rem;
+        /* max-width: 33rem; */
+        flex: 1;
     }
 
     .project-list__image{
         flex: 1;
         min-width: 12rem;
+    }
+
+    .project-list__info > p:last-of-type{
+        margin-bottom: 0;
     }
 }
 
@@ -149,6 +153,10 @@ ul.stacked-list{
     .stacked-list > li{
         gap: var(--size-800);
     }
+}
+
+.project-list__image{
+    order: 1;
 }
 
 .stacked-list > li a:hover::before{

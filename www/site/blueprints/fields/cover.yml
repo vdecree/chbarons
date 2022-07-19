@@ -5,5 +5,7 @@
 type: files
 multiple: false
 query: page.images.template('image')
+label: Cover Image
+help: This is the image used on the projects listing page, you can choose what gets used as a thumbnail
 uploads:
   template: image

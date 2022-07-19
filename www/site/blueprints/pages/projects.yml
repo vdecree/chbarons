@@ -1,11 +1,18 @@
+# Each page blueprint must have a title, the title may be different from the file name
 title: Projects
 
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 🖼
+
+# Here we extend two sections which are defined in `/site/blueprints/sections/albums.yml`
+# They differ in their page status and the headline.
 sections:
-  # name of section we're making
-  projects:
-    # four types of fields
-    type: pages
-    layout: cards
-    image:
-      ratio: 4/5
-      cover: true
+  drafts:
+    extends: sections/projects
+    label: Draft Projects
+    status: draft
+
+  listed:
+    extends: sections/projects
+    label: Published Projects
+    status: listed

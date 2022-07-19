@@ -1,5 +1,9 @@
 title: Project
 
+status:
+  draft: true
+  listed: true
+
 columns:
   - width: 1/2
     sections:
@@ -19,12 +23,14 @@ columns:
             size: small
           year:
             type: text
+          cover: fields/cover
 
   - width: 1/2
     sections:
       gallery:
         type: files
         layout: cards
+        template: image
         image: 
           ratio: 1/1
 
