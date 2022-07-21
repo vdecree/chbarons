@@ -10,6 +10,9 @@ const theme = {
     secondary: '#CE8B48',
     light: '#ffffff',
     dark: '#252525',
+    lightgrey: '#e3e3e3',
+    mediumgrey: '#bbbbbb',
+    success: '#8cc67c',
   },
   fonts: {
     base: 'Mukta, sans-serif, arial',
@@ -19,6 +22,11 @@ const theme = {
     block: "block",
     none: "none",
     inline: "inline-block"
+  },
+  radius: {
+    small: ".2rem",
+    medium: ".5rem",
+    large: ".8rem",
   },
   transform: {
     upper: "uppercase",
@@ -74,6 +82,11 @@ module.exports = {
     font: {
       items: theme.fonts,
       property: 'font-family',
+      variable: true,
+    },
+    radius: {
+      items: theme.radius,
+      property: 'border-radius',
       variable: true,
     },
     transform: {

@@ -11,7 +11,15 @@ return [
     'debug' => true,
     'panel' => [
         'slug' => 'admin-area'
-    ]
+    ],
+    'email' => [
+        'transport' => [
+          'type' => 'smtp',
+          'host' => 'host.docker.internal',
+          'port' => 1025,
+          'security' => false,
+        ]
+      ],
 ];
 
 

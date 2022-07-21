@@ -20,16 +20,13 @@
 ?>
 <?php snippet('header') ?>
 
-<section>
+<section class="project [ pad-top-1500 pad-bottom-1500 ]">
   <div class="wrapper">
-    <article>
-      <h1 class="h1"><?= $page->title()->html() ?></h1>
-      <div class="text">
-        <?= $page->text()->kt() ?>
-      </div>
-    </article>
-</div>
+    <h1 class="page-title [ text-1000 ]"><?= $page->title()->html() ?></h1>
+    <div class="page-content">
+      <?= $page->text()->kt() ?>
+    </div>
+  </div>
 </section>
-
 
 <?php snippet('footer') ?>

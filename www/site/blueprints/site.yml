@@ -27,6 +27,7 @@ columns:
         type: pages
         create: default
         templates:
+          - contact
           - projects
           - about
           - home
