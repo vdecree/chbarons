@@ -26,6 +26,16 @@ columns:
         label: Page Content
         type: textarea
         size: medium
+      info:
+        label: Info
+        type: info
+        text: These fields are for quick contact information at the top of the page.
+      tel:
+        label: Telephone
+        type: tel
+      email:
+        label: Email
+        type: email
 
   right:
     width: 1/3

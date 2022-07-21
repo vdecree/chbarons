@@ -225,9 +225,12 @@ ul.stacked-list{
     margin-bottom: var(--size-400);
 }
 
-.contact .page-content{
-    --split-child-space: 4rem;
-    --split-child-align: top;
+
+@media screen and (min-width: 42em) {
+    .contact .page-content{
+        --split-child-space: 4rem;
+        --split-child-align: top;
+    }
 }
 
 form input, form textarea {
@@ -288,4 +291,18 @@ form >  * .field:first-of-type{
 
 .success{
     background-color: var(--color-success);
+}
+
+.section-alert{
+    padding: var(--size-600);
+    border-radius: var(--radius-small);
+    margin-bottom: var(--size-1000);
+}
+
+.section-alert > p:last-child{
+    margin-bottom: 0;
+}
+
+.section-alert.info{
+    background-color: var(--color-info);
 }

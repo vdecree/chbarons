@@ -25,6 +25,10 @@
     <h1 class="page-title [ text-1000 ]"><?= $page->title()->html() ?></h1>
     <div class="page-content [ split-child ]">
         <div class="text">
+            <div class="section-alert [ info ]">
+                <p>Telephone: <?= $page->tel() ?><br>
+                Email: <a href="mailto:<?= $page->email()->html() ?>"><?= $page->email() ?></a></p>
+            </div>
             <?= $page->text()->kt() ?>
         </div>
         <div class="contact=form">

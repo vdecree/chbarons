@@ -13,6 +13,7 @@ const theme = {
     lightgrey: '#e3e3e3',
     mediumgrey: '#bbbbbb',
     success: '#8cc67c',
+    info: '#CBD7E5',
   },
   fonts: {
     base: 'Mukta, sans-serif, arial',
