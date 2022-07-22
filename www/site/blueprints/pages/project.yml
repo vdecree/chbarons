@@ -11,6 +11,12 @@ columns:
       info:
         type: fields
         fields:
+          featured:
+            type: toggle
+            label: Is this project featured?
+            text: 
+              - "no"
+              - "yes"
           client:
             type: text
             label: Client / Title

@@ -54,6 +54,11 @@
     --auto-grid-min: calc(50% - var(--auto-grid-gap));
     --auto-grid-gap: var(--size-400);
 }
+
+.our-work__images .image{
+    position: relative;
+}
+
 @media screen and (max-width: 31.9em) {
     .our-work .our-work__images .image:nth-child(3n){
         display: none;

@@ -26,8 +26,9 @@
     <div class="page-content [ split-child ]">
         <div class="text">
             <div class="section-alert [ info ]">
-                <p>Telephone: <?= $page->tel() ?><br>
-                Email: <a href="mailto:<?= $page->email()->html() ?>"><?= $page->email() ?></a></p>
+                <p class="[ text-600 ]">Contact Information</p>
+                <p>Telephone: <?= $site->telephone() ?><br>
+                Email: <a href="mailto:<?= $site->email()->html() ?>"><?= $site->email() ?></a></p>
             </div>
             <?= $page->text()->kt() ?>
         </div>

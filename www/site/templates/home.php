@@ -38,22 +38,11 @@
     </div>
   </section>
 
-  <section class="our-work [ pad-top-1500 pad-bottom-1500 ]">
-    <div class="wrapper">
-      <h2>Some of our recent work</h2>  
-      <div class="our-work__images [ auto-grid ]">
-        <div class="image">
-          <img src="assets/images/p-1.jpg" alt="">
-        </div>
-        <div class="image">
-          <img src="assets/images/p-2.jpg" alt="">
-        </div>
-        <div class="image">
-          <img src="assets/images/p-3.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php snippet('projects-featured', [
+    'projects' => collection('projects')
+    ->limit(3)
+    ->filterBy('featured', true)
+  ]) ?>
 
   <section class="specialist [ pad-top-300 pad-bottom-1500 ]">
     <div class="wrapper">

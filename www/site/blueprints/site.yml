@@ -10,7 +10,28 @@ columns:
   # It reuses the pages section defined in `/site/blueprints/sections/albums.yml`
   - width: 1/2
     sections:
-      albums: sections/albums
+      info:
+        type: fields
+        fields:
+          info:
+            label: Your Information
+            type: info
+            text: This information is used around the website so please input the correct details.
+          telephone:
+            label: Telephone
+            type: tel
+          email:
+            label: Email
+            type: email
+          instagram:
+            label: Instagram
+            type: text
+            help: You only need the /username part of the URL here
+          facebook:
+            label: Facebook
+            type: text
+            help: You only need the /username part of the URL here
+      
 
   # The second column has two sections, `notes` and `pages`
   - width: 1/2

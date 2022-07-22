@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="footer-bottom [ pad-top-1400 gap-top-1400 ]">
-        <p>&copy; CH Barons LTD 2022. All Rights Reserved.Website by Mat doidge</p>
+        <p>&copy; CH Barons LTD 2022. All Rights Reserved. <a href="https://matdoidge.co.uk">Website by Mat doidge</a></p>
       </div>
     </div>
   </footer>
